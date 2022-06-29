@@ -1,21 +1,24 @@
 h3 {
-    background-color: blue;
+    background-color: lightgray;
     font-weight: bolder;
-    margin-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    display: flex;
 }
 
 h1 {
     background-color: aquamarine;
     font-weight: bold;
-    margin-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    display: flex;
 }
 
 h2{
-    margin-top: 327px;
-    display: flex;
     justify-content: center;
-    position: fixed;
-    margin-left: 375px;
+    display: flex;
 }
 
 img {
@@ -30,24 +33,63 @@ img {
     padding: 2px;
     padding-top: 2px;
     padding-bottom: 2px;
-    margin-top: 2px;
+    margin-top: 0px;
     box-shadow: 0 0 10px black;
     transform: scale(1,1);
-    justify-content: center;
-    display: flex;
-    position: fixed;
+    position: relative;
 }
 
 #mountain {
     background-color: black;
-    margin-left: 150px;
     position: fixed;
-    margin-top: 20px;
+    margin-top: 40px;
+    display: inline;
+    position: fixed;
 }
 
 #mountainTwo {
     background-color: black;
-    margin-left: 550px;
+    margin-top: 40px;
+    display: flex;
+    margin-left: 320px;
     position: fixed;
-    margin-top: 20px;
+}
+
+#mountainThree {
+    background-color: black;
+    margin-top: 40px;
+    display: flex;
+    margin-left: 643px;
+    position: fixed;
+}
+
+#cart {
+    position: fixed;
+    margin-top: 350px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#cartTwo {
+    position: fixed;
+    margin-top: 350px;
+    margin-left: 330px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#cartThree {
+    position: fixed;
+    margin-top: 350px;
+    margin-left: 657px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightcyan;
 }
