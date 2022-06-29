@@ -1,0 +1,15 @@
+h3 {
+    background-color: blue;
+    font-weight: bolder;
+}
+
+h1 {
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+.img {
+    border: 2px soild royalblue;
+    padding: 4px;
+    width: 200px;
+}
