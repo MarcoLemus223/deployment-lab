@@ -16,10 +16,6 @@ var rollbar = new Rollbar({
 
 rollbar.log('Hello world!')
 
-app.get('/', (req, res) => {
-    res.send('marco')
-    rollbar.info('someone wanted to know marcos name')
-})
 
 app.use 
     nonExistentFunction();
