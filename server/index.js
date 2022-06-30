@@ -4,7 +4,7 @@ const cors = require('cors')
 
 const app = express()
 
-app.use(express.json())
+//app.use(express.json())
 app.use(cors())
 
 var Rollbar = require("rollbar");
@@ -16,13 +16,14 @@ var rollbar = new Rollbar({
 
 rollbar.log('Hello world!')
 
+app.get('/', (req, res) => {
+    res.send('marco')
+    rollbar.info('someone wanted to know marcos name')
+})
+
 app.use 
     nonExistentFunction();
 
-  app.use 
-    Rollbar.critical("Crash while processing payment")
-  app.use 
-    Rollbar.warning("Login unavailable")
 
 
 app.get('/', (req, res) => {
