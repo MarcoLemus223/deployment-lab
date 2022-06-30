@@ -19,8 +19,10 @@ rollbar.log('Hello world!')
 app.use 
     nonExistentFunction();
 
-  Rollbar.critical("Crash while processing payment")
-  Rollbar.warning("Login unavailable")
+  app.use 
+    Rollbar.critical("Crash while processing payment")
+  app.use 
+    Rollbar.warning("Login unavailable")
 
 
 app.get('/', (req, res) => {
