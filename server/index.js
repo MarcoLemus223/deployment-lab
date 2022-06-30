@@ -19,7 +19,9 @@ rollbar.log('Hello world!')
 app.use 
     nonExistentFunction();
 
-  
+  Rollbar.critical("Crash while processing payment")
+  Rollbar.warning("Login unavailable")
+
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'))
